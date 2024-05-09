@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Livre</title>
+    <link rel="stylesheet" type="text/css" href="/estilo.css">
+</head>
+<body>    
+    <h1>Loja - Aple Store</h1>
+
+    <form action="/" method="GET">
+        <label for="categoria">Categoria:</label>
+        <select name="categoria" id="categoria">
+            <option value="">Escolha uma categoria</option>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="eletrodomestico">Eletrodomésticos</option>
+            <option value="movel">Móveis</option>
+            <option value="roupa">Roupas</option>
+        </select>
+        <button type="submit">Filtrar</button>
+
+    </form>
+
+    <ul class="bloco" >
+        <% p.forEach(function(produto){ %> 
+
+                <li class="<%= produto.categoria %>"><a href='/products/<%= produto.id %>'><%= produto.nome %></a>
+                    <p><%= produto.categoria %></p>
+                    <p><%= produto.preco %></p>
+                </li>
+                <!-- <p><%= produto.categoria %></p>
+                <p><%= produto.preco %></p> -->
+           
+        <% }); %>
+    </ul>
+    <a href="/add">Adicionar uma nova postagem</a>
+</body>
+</html>

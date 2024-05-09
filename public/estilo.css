@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bloco{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+}
+.eletronicos{
+    text-align: center;
+    background-color: #cccccc;
+    margin: 10px;
+    padding: 5%;
+    width: 100px;
+    border-radius: 20px;
+}
+.movel{
+    background-color: #f67704;
+    margin: 10px;
+    padding: 5%;
+    width: 100px;
+    border-radius: 20px;
+
+}
+.roupa{
+    background-color: #029b99;
+    margin: 10px;
+    padding: 5%;
+    width: 100px;
+    border-radius: 20px;
+
+}
+.eletrodomestico{
+    background-color: #87555c;
+    margin: 10px;
+    padding: 5%;
+    width: 100px;
+    border-radius: 20px;
+
+}
